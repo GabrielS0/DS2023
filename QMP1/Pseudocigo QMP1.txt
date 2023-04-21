@@ -1,0 +1,32 @@
+ 
+#Atuendo()>>
+    private list<Prenda> prendas;
+
+#Prenda()>>
+    private Tipo tipo;
+    private enum material;
+    private Color colorPrincipal;
+    private Color colorSecundario;
+
+    public Prenda(enum tipo, enum categoria, enum material, Color colorPrincipal) {
+        this.tipo = thisIsNotNull(colorTipo,"falta parametros");
+        this.material = thisIsNotNull(material,"falta parametros");
+        this.colorPrincipal = thisIsNotNull(colorPrincipal,"falta parametros");
+        this.colorSecundario = null;
+    }
+
+    public Prenda(enum tipo, enum categoria, enum material, Color colorPrincipal, Color colorSecundario) {
+        this.tipo = thisIsNotNull(colorTipo,"falta parametros");
+        this.material = thisIsNotNull(material,"falta parametros");
+        this.colorPrincipal = thisIsNotNull(colorPrincipal,"falta parametros");
+        this.colorSecundario = thisIsNotNull(colorSecundario,"falta parametros");
+    }
+
+
+
+#Tipo()>>
+
+   private enum categoria;
+    public Get_Categoria();{
+    return categoria
+    }

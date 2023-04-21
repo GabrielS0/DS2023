@@ -1,0 +1,18 @@
+Pense que el objeto atuendo debe ser una lista de prendas, pero como no tenemos mas informacion
+al respecto no onde mas
+
+Para la clase Prenda, primero pense en que todo sean strings, pero me di cuenta que seria un error
+ya que podrias poner de distintas formas el mismo concepto y estaria mal, por ende
+decidi que sean enums, asi lo "normaliza" a la cuestion, luego me di cuenta que seria imposible
+enumerar todos los colores, por ende cree una clase, color aunque no implemente nada de esto
+ya que no se me ocurrio como,pero el concpeto es que cada color se pueda diferenciar en la infinidad
+de colores que haya, luego para evitar que no se condiga el tipo con la categoria, no supe bien como plantearlo
+y se me ocurrio hacer que el tipo, tenga una categoria definida y luego en la prenda delegar la categoria,
+ya que se supone que una Remera por poner de ejemplo no la usariamos como calzado y etc.
+
+Luego use un constructor para todos los valores donde verificaba que los valores pasados
+no fueran null y si lo era mandaba un error, excepto para color secundario, ya que para
+plantear que pueda o no tener color secundario hice el constructor donde solo se tenga
+valor principal, y otro constructor donde si se pueda enviar como parametro el color secundario
+y se verifique todos los parametros si no son null, lo hice pensando en la sobrecarga de
+funciones, como en C, la verdad nose si funciona en java, pero segun lo que lei si jaja.
